@@ -1,0 +1,262 @@
+/*Основний колір заголовків, nav і тексту 
+неактивних кнопок в портфоліо: --title-color: #212121;*/
+
+/*Основний колір для p та  mail tel в хедері: --p-color: #757575;*/
+
+/*Основний фон і колір тексту деяких елементів: --main-white-color: #FFFFFF;*/
+
+/*Колір головного банера і футерa: --hero-and-main-bgcolor: ##2F303A*/
+
+/*Колір ховерів,акцентів і куска лого: --accent-color: #2196F3;*/
+
+/*Фон секції з командою та неактивних кнопок в portfolio: --personal-bg:#F5F4FA;*/
+
+/*Фон кнопки героя : --hero-button-bg:#2196F3*/
+
+/*all*/
+
+:root {
+  --title-color: #212121;
+  --p-color: #757575;
+  --main-white-color: #ffffff;
+  --hero-and-footer-bgcolor: #2f303a;
+  --accent-color: #2196f3;
+  --personal-bg: #f5f4fa;
+  --hero-button-bg: #2196f3;
+}
+
+body {
+  background-color: var(--main-white-color);
+  color: var(--title-color);
+
+  font-family: "Roboto", "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/*header*/
+
+#studio {
+  color: var(--accent-color);
+}
+
+.header-logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+
+  color: var(--accent-color);
+}
+
+.header-logo span {
+  color: var(--title-color);
+}
+
+.site-nav a,
+.mail-and-tel a {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--title-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.mail-and-tel a {
+  color: var(--p-color);
+}
+
+.mail-and-tel .link:hover,
+.mail-and-tel .link:focus {
+  color: var(--accent-color);
+}
+
+/*hero*/
+
+.hero {
+  background-color: var(--hero-and-footer-bgcolor);
+}
+
+.hero-name {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.37;
+  letter-spacing: 0.06em;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: var(--main-white-color);
+}
+
+/*button*/
+
+.hero-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+
+  color: var(--main-white-color);
+  background-color: var(--hero-button-bg);
+}
+
+.hero-button:focus {
+  color: var(--accent-color);
+}
+
+/*first section */
+
+.first-main-section h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--title-color);
+}
+
+.first-main-section p {
+  font-size: 14px;
+  line-height: 1.71;
+
+  color: var(--p-color);
+}
+
+/*second section*/
+
+.second-section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.second-main-section h3 {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+/*third section*/
+
+.third-main-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.third-main-section {
+  background-color: var(--personal-bg);
+}
+
+.worderks-description h3 {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.worderks-description p {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+
+  color: var(--p-color);
+}
+
+/*footer*/
+
+.footer {
+  background-color: var(--hero-and-footer-bgcolor);
+}
+
+.footer-logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+
+  color: var(--hero-button-bg);
+}
+
+.footer-logo span {
+  color: var(--main-white-color);
+}
+
+.address a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.address .link-address {
+  color: var(--main-white-color);
+}
+
+.address a:focus {
+  color: var(--accent-color);
+}
+
+/*portfolio*/
+
+#portfolio {
+  color: var(--accent-color);
+}
+
+.portfolio-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  text-align: center;
+
+  color: var(--title-color);
+  background-color: var(--personal-bg);
+}
+
+.portfolio-button:hover,
+.portfolio-button:focus {
+  background: var(--accent-color);
+  color: var(--main-white-color);
+}
+.filter-list h2 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+
+  letter-spacing: 0.06em;
+}
+
+.filter-list p {
+  font-size: 16px;
+  line-height: 2px;
+
+  letter-spacing: 0.03em;
+
+  color: var(--p-color);
+}
